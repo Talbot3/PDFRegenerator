@@ -25,5 +25,5 @@ jobs:
     - name: Publish
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
-        user: {{secrets.PYPI_USERNAME}}
+        user: Talbot3
         password: ${{ secrets.PYPI_PASSWORD }}
