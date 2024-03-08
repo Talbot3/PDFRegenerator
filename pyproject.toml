@@ -1,0 +1,17 @@
+[project]
+name = "pdfregenerator"
+version = "0.0.1"
+authors = [{name="talbot",email="1796560392@qq.com"}]
+description = "a regenerator pdf tool"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+Homepage = "https://github.com/Talbot3/PDFRegenerator"
+Issues = "https://github.com/Talbot3/PDFRegenerator/issues"
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
