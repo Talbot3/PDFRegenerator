@@ -1,6 +1,6 @@
 [project]
 name = "pdf_regenerator"
-version = "0.0.2020240308181522"
+version = "0.0.20240308182113"
 authors = [{name="Talbot3",email="1796560392@qq.com"}]
 description = "PDF Regenerator是一款开源辅助阅读工具，可帮助重新生成 有辅助信息的PDF 文件。"
 readme = "README.md"

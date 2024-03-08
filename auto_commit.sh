@@ -1,11 +1,12 @@
 #!/bin/bash
-# 获取当前时间戳
+# 获取当前本地时间戳
 timestamp=$(date +"%Y%m%d%H%M%S")
-
-# 从 pyproject.toml 中提取版本号，并添加当前时间戳
-old_version=$(sed -n 's/version = "\(.*\)"/\1/p' pyproject.toml)
-new_version=$(echo ${old_version} | sed "s/\([0-9]\{12\}\)$/$(date +"%Y%m%d%H%M%S")/")
-
+# 从 pyproject.toml 中提取并更新版本号
+old_version=$(sed -n 's/version = "\([0-9\.]*\)"/\1/p' pyproject.toml)
+old_version_length=$(echo -n "$old_version" | wc -c)
+timestamp_length=$(echo -n "$timestamp" | wc -c)
+version_prefix=0.0.
+new_version="${version_prefix}${timestamp}"
 # 替换 pyproject.toml 中的版本号
 sed -i '' -e "s/version = \".*\"/version = \"$new_version\"/" pyproject.toml
 
