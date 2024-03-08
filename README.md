@@ -18,5 +18,5 @@ python3 -m pdf-regenerator $YOU_PDF_PATH $YOU_OUT_FILE_DIR
 ## 测试命令
 
 ```bash
-python3 -m pdf-regenerator ./test/asset/word2vec .
+python3 -m pdf_regenerator /Users/lilisi/PDFRegenerator/tests/asset/word2vec.pdf      
 ```
