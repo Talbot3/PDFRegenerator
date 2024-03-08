@@ -11,9 +11,9 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
-    permissions:
+#    permissions:
       # IMPORTANT: this permission is mandatory for trusted publishing
-      id-token:  ${{ secrets.PYPI_PASSWORD }}
+#      id-token:  ${{ secrets.PYPI_PASSWORD }}
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -27,3 +27,6 @@ jobs:
       run: python -m build .
     - name: Publish
       uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        user: {{secrets.PYPI_USERNAME}}
+        password: ${{ secrets.PYPI_PASSWORD }}
