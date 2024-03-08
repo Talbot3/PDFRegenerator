@@ -15,3 +15,5 @@ python_version = "3.12"
 
 [scripts]
 cm = "bash ./auto_commit.sh"
+ib = "pip install --upgrade build"
+bu = "python -m build"
