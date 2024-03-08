@@ -10,7 +10,9 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "pymupdf"
+    "pymupdf",
+    "PyPDF2",
+    "reportlab"
 ]
 
 [project.urls]
