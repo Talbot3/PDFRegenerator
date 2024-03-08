@@ -13,7 +13,7 @@ sed -i '' -e "s/version = \".*\"/version = \"$new_version\"/" pyproject.toml
 echo "Version updated to: $new_version"
 
 # 获取提交日期
-last_commit_date=$(timestamp)
+last_commit_date=$(date +"%Y%m%d%H%M%S")
 # 获取最近的文件变动
 file_changes=$(git diff --stat)
 # 生成 commit 消息
