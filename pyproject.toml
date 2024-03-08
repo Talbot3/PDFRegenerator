@@ -11,8 +11,9 @@ classifiers = [
 ]
 dependencies = [
     "pymupdf",
-    "PyPDF2",
-    "reportlab"
+    "pypdf2",
+    "reportlab",
+    "frontend"
 ]
 
 [project.urls]

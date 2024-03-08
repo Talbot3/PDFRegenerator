@@ -5,8 +5,9 @@ name = "pip_conf_index_global"
 
 [packages]
 pymupdf = "*"
-pillow = "*"
-pytesseract = "*"
+reportlab = "*"
+pypdf2 = "*"
+frontend = "*"
 
 [dev-packages]
 
