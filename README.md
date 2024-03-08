@@ -14,3 +14,9 @@ pip install pdf-regenerator
 ```
 python3 -m pdf-regenerator $YOU_PDF_PATH $YOU_OUT_FILE_DIR
 ```
+
+## 测试命令
+
+```bash
+python3 -m pdf-regenerator ./test/asset/word2vec .
+```

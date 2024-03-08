@@ -8,6 +8,7 @@ pymupdf = "*"
 reportlab = "*"
 pypdf2 = "*"
 frontend = "*"
+pdf-regenerator = {file = ".", editable = true}
 
 [dev-packages]
 

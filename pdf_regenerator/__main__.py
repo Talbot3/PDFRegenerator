@@ -7,10 +7,10 @@ import io
 import click
 
 @click.command()
-@click.argument('pdf_path', type=click.Path(exists=True))
-@click.option('--output_path', '-o', help='Output file path', type=click.Path(), default=lambda: os.path.join(os.getcwd()))
+@click.argument('pdf_path', type=click.Path())
+@click.option('output_path', '-o', help='Output file path', type=click.Path(), default=lambda: os.path.join(os.getcwd()))
 def create_pdf_with_contents(pdf_path, output_path):
-    doc = fitz.open(pdf_path)
+    doc = fitz.open(os.path.abspath(pdf_path))
     toc = []
     titles = []
 
@@ -42,9 +42,10 @@ def create_pdf_with_contents(pdf_path, output_path):
     # 添加标记到文件名
     if output_path:
         mark = 'mark'
-        output_file_path = os.path.join(os.path.dirname(output_path), f'{file_name}_{mark}{file_extension}')
+        output_file_path = os.path.join(os.path.dirname(os.path.abspath(output_path)), f'{file_name}_{mark}{file_extension}')
 
     with open(output_file_path, "wb") as outputStream:
+        print(f"regenerator path -> {output_file_path}")
         output.write(outputStream)
 if __name__ == "__main__":
     create_pdf_with_contents()

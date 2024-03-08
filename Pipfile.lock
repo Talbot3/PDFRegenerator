@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9739409bc1e80f55ad99342b5be5171e73c5872cda13dbf6d3fd6ca58dd910d3"
+            "sha256": "2f95ba6fe38e871d510ec2b7ee2045b52723936416e3f5c673954c1fa083d8bc"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -80,6 +80,10 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==2.1.2"
+        },
+        "pdf-regenerator": {
+            "editable": true,
+            "file": "."
         },
         "pillow": {
             "hashes": [
