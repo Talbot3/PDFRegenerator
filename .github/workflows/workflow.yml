@@ -27,3 +27,5 @@ jobs:
       with:
         user: Talbot3
         password: ${{ secrets.PYPI_PASSWORD }}
+    - name: Update mirror
+      run:  pip install -i https://mirrors.aliyun.com/pypi/simple/ pdf_generator
