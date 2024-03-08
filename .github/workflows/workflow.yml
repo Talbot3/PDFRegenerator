@@ -27,8 +27,6 @@ jobs:
       run: python -m build .
     - name: Publish
       uses: pypa/gh-action-pypi-publish@release/v1
-      with:
-        skip-existing: true
       env:
         TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
         TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
