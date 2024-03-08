@@ -2,10 +2,14 @@
 # 获取当前时间戳
 timestamp=$(date +"%Y%m%d%H%M%S")
 
-# 更新 pyproject.toml 中的 version
-sed -i '' -e "s/version = \".*\"/version = \"$timestamp\"/" pyproject.toml
+# 从 pyproject.toml 中提取版本号，并添加当前时间戳
+old_version=$(sed -n 's/version = "\(.*\)"/\1/p' pyproject.toml)
+new_version=$(echo ${old_version} | sed "s/\([0-9]\{12\}\)$/$(date +"%Y%m%d%H%M%S")/")
 
-echo "Version updated to: $timestamp"
+# 替换 pyproject.toml 中的版本号
+sed -i '' -e "s/version = \".*\"/version = \"$new_version\"/" pyproject.toml
+
+echo "Version updated to: $new_version"
 
 # 获取提交日期
 last_commit_date=$(timestamp)
