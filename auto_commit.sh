@@ -1,6 +1,6 @@
 #!/bin/bash
 # 获取当前本地时间戳
-timestamp=$(date +"%Y%m%d%H%M%S")
+export timestamp=$(date +"%Y%m%d%H%M%S")
 # 从 pyproject.toml 中提取并更新版本号
 old_version=$(sed -n 's/version = "\([0-9\.]*\)"/\1/p' pyproject.toml)
 old_version_length=$(echo -n "$old_version" | wc -c)
