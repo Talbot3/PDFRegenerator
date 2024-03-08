@@ -12,4 +12,4 @@ commit_message="Auto-generated summary:
 
 # 提交到 Git
 git commit -am "$commit_message"
-ggpush
+git push origin
