@@ -1,7 +1,7 @@
 # Regenerator PDF
 
-[![Stable Version](https://img.shields.io/pypi/v/pdf-regenerator?label=stable)][PyPI Releases]
-[![Python Versions](https://img.shields.io/pypi/pyversions/pdf-regenerator)][PyPI]
+[![Stable Version](https://img.shields.io/pypi/v/pdf-regenerator?label=stable)]
+[![Python Versions](https://img.shields.io/pypi/pyversions/pdf-regenerator)]
 [![Download Stats](https://img.shields.io/pypi/dm/pdf-regenerator)](https://pypistats.org/packages/pdf-regenerator)
 
 Regenerator PDF 是一款开源工具，可帮助您将PDF文档 转换为有辅助信息的PDF。它可以执行以下功能：
