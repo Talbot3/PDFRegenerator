@@ -29,5 +29,6 @@ python3 -m pdf_regenerator /Users/lilisi/PDFRegenerator/tests/asset/word2vec.pdf
 ```
 
 ## 资源
+* [Releases][PyPI Releases]
 
-- [PyPI Releases]: https://pypi.org/project/pdf-regenerator/#history
+  [PyPI Releases]: https://pypi.org/project/pdf-regenerator/#history
