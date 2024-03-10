@@ -1,5 +1,7 @@
 # Regenerator PDF
 
+![pdf_regenerator_icon](./asset/pdf_regenerator.png)
+
 ![Stable Version](https://img.shields.io/pypi/v/pdf-regenerator?label=stable)
 ![Python Versions](https://img.shields.io/pypi/pyversions/pdf-regenerator)
 [![Download Stats](https://img.shields.io/pypi/dm/pdf-regenerator)](https://pypistats.org/packages/pdf-regenerator)
