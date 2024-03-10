@@ -2,7 +2,7 @@
 
 ![pdf_regenerator_icon](./asset/pdf_regenerator.png)
 
-![Stable Version](https://img.shields.io/pypi/v/pdf-regenerator?label=stable)
+[![Stable Version](https://img.shields.io/pypi/v/pdf-regenerator?label=stable)][PyPI Releases]
 ![Python Versions](https://img.shields.io/pypi/pyversions/pdf-regenerator)
 [![Download Stats](https://img.shields.io/pypi/dm/pdf-regenerator)](https://pypistats.org/packages/pdf-regenerator)
 
@@ -27,3 +27,7 @@ python3 -m pdf-regenerator $YOU_PDF_PATH $YOU_OUT_FILE_DIR
 ```bash
 python3 -m pdf_regenerator /Users/lilisi/PDFRegenerator/tests/asset/word2vec.pdf      
 ```
+
+## 资源
+
+- [PyPI Releases]: https://pypi.org/project/pdf-regenerator/#history
