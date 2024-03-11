@@ -31,7 +31,6 @@ def create_pdf_with_contents(pdf_path, output_path):
     packet.seek(0)
     new_pdf = PdfReader(packet) # 更新类名
     output = PdfWriter() # 更新类名
-
     output.add_page(new_pdf.pages[0]) # 更新调用方式
 
     existing_pdf = PdfReader(open(pdf_path, "rb")) # 更新类名

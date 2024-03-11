@@ -5,6 +5,7 @@
 [![Stable Version](https://img.shields.io/pypi/v/pdf-regenerator?label=stable)][PyPI Releases]
 ![Python Versions](https://img.shields.io/pypi/pyversions/pdf-regenerator)
 [![Download Stats](https://img.shields.io/pypi/dm/pdf-regenerator)](https://pypistats.org/packages/pdf-regenerator)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Talbot3/PDFRegenerator)](PDFRegenerator)
 
 Regenerator PDF 是一款开源工具，可帮助您将PDF文档 转换为有辅助信息的PDF。它可以执行以下功能：
 - **标记到索引单元**：将 PDF 文档中的标记转换为索引单元，以便于快速导航和搜索。
@@ -32,3 +33,4 @@ python3 -m pdf_regenerator /Users/lilisi/PDFRegenerator/tests/asset/word2vec.pdf
 * [Releases][PyPI Releases]
 
   [PyPI Releases]: https://pypi.org/project/pdf-regenerator/#history
+  [PDFRegenerator]: https://github.com/Talbot3/PDFRegenerator
