@@ -13,6 +13,7 @@ python-pptx = "*"
 comtypes = "*"
 install = "*"
 python-magic = "*"
+img2pdf = "*"
 
 [dev-packages]
 
