@@ -6,6 +6,33 @@ from PyPDF2 import PdfReader, PdfWriter
 import io
 import click
 
+from pptx import Presentation
+def ppt_to_pdf(input_ppt_file, output_pdf_file):
+    prs = Presentation(input_ppt_file)
+    pdf_canvas = canvas.Canvas(output_pdf_file)
+
+    for slide in prs.slides:
+        pdf_canvas.drawString(100, 800, slide.title.text)  # 示例：将PPT每页的标题绘制到PDF页面上
+
+        # 如果要将PPT页面内容精确转换为PDF页面内容，需要对slide.shapes进行遍历，根据需要重新排版
+
+        pdf_canvas.showPage()
+
+    pdf_canvas.save()
+
+def ppt_dir_to_pdf(input_ppt_dir, output_pdf_dir):
+    import os
+
+    if not os.path.exists(output_pdf_dir):
+        os.makedirs(output_pdf_dir)
+
+    for filename in os.listdir(input_ppt_dir):
+        if filename.endswith(".pptx"):  # 确保只处理PPTX文件
+            ppt_file = os.path.join(input_ppt_dir, filename)
+            pdf_file = os.path.join(output_pdf_dir, filename.replace(".pptx", ".pdf"))
+            ppt_to_pdf(ppt_file, pdf_file)
+
+
 @click.command()
 @click.argument('pdf_path', type=click.Path())
 @click.option('output_path', '-o', help='Output file path', type=click.Path(), default=lambda: os.path.join(os.getcwd()))

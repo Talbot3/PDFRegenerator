@@ -11,6 +11,8 @@ frontend = "*"
 pdf-regenerator = {file = ".", editable = true}
 python-pptx = "*"
 comtypes = "*"
+install = "*"
+python-magic = "*"
 
 [dev-packages]
 
